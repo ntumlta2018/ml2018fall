@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Machine Learning (Fall, 2018)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <img src="img/logo.png" width="40%">
+  <h1 class="text-light">Machine Learning</h1>
+  <h1 class="text-light">(Fall, 2018)</h2>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- <a class="navbar-brand" href="#">Home</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="hw0.html">Homework0</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Homework1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Homework2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Homework3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Homework4</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">Final Project</a>
+      </li>                  
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:40px">
+  <div class="row">
+    <div class="col-sm-12">
+     <div>
+      <h2 id="Introduction">Introduction</h2>
+      <p>
+          本課程旨在介紹機器學習使用者都應該知道的基本機器學習理論、方法和工具，期望透過這門課，讓學生對機器學習的技術，有更系統性的認識，並具備實作這些技術的基本能力，以期在未來能將這些技術活用到各自的專業領域中。 
+      </p>
+
+    
+      <h2 id="Syllabus">Syllabus</h2>
+          <table class="table table-bordered">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Week</th>
+                  <th>Date</th>
+                  <th>Topic</th>
+                  <th>Slides</th>
+                  <th>Announcement</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-center">9/14</td>
+                  <td class="text-left">Introduction; Regression; Bias and Variance Errors</td>
+                  <td class="text-center"></td>
+                  <td class="text-center">HW0 out</td>
+                </tr>
+                <tr>
+                  <td class="text-center">2</td>
+                  <td class="text-center">9/21</td>
+                  <td class="text-left">Gradient Decent; Classification with Probabilistic Generative Model	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">HW0 due<br>HW1 out</td>
+                </tr>
+                <tr>
+                  <td class="text-center">3</td>
+                  <td class="text-center">9/28</td>
+                  <td class="text-left">Logistic Regression, Deep Learning Introduction  </td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">4</td>
+                  <td class="text-center">10/5</td>
+                  <td class="text-left">Back Propagation, Deep Learning Implementation, Machine Learning Tips</td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">5</td>
+                  <td class="text-center">10/12</td>
+                  <td class="text-left">Tips for Training Neural Network & Convolutional Neural Network (CNN)	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">HW1 due<br>HW2 out</td>
+                </tr>
+                <tr>
+                  <td class="text-center">6</td>
+                  <td class="text-center">10/19</td>
+                  <td class="text-left">Dimensionality Reduction: Principle Component Analysis, Neighbor Embedding	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">7</td>
+                  <td class="text-center">10/26</td>
+                  <td class="text-left">Ensemble and Auto encoder	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">8</td>
+                  <td class="text-center">11/2</td>
+                  <td class="text-left">Recurrent Neural Network	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">HW2 due</td>
+                </tr>
+                <tr class="table-info">
+                  <td class="text-center">9</td>
+                  <td class="text-center">11/9</td>
+                  <td class="text-left">Midterm	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Final Project out</td>
+                </tr>
+                <tr>
+                  <td class="text-center">10</td>
+                  <td class="text-center">11/16</td>
+                  <td class="text-left">Recurrent Neural Network; Word Embedding  </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">HW3 out</td>
+                </tr>
+                <tr>
+                  <td class="text-center">11</td>
+                  <td class="text-center">11/23</td>
+                  <td class="text-left">Semi-Supervised Learning; Matrix Factorization	   </td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">12</td>
+                  <td class="text-center">11/30</td>
+                  <td class="text-left">Expectation Maximization   </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Final Proposal due</td>
+                </tr>
+                <tr>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12/7</td>
+                  <td class="text-left">Generative Adversarial Network	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">HW3 due<br>HW4 out</td>
+                </tr>
+                <tr>
+                  <td class="text-center">14</td>
+                  <td class="text-center">12/14</td>
+                  <td class="text-left">Support Vector Machine: Introduction and Optimization   </td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">15</td>
+                  <td class="text-center">12/21</td>
+                  <td class="text-left">Support Vector Machine: Duality	 	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr>
+                  <td class="text-center">16</td>
+                  <td class="text-center">12/28</td>
+                  <td class="text-left">Support Vector Machine: Kernel	 	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">HW4 due</td>
+                </tr>
+                <tr>
+                  <td class="text-center">17</td>
+                  <td class="text-center">1/4</td>
+                  <td class="text-left">Transfer Learning; Reinforcement Learning	 	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center"></td>
+                </tr>
+                <tr class="table-info">
+                  <td class="text-center">18</td>
+                  <td class="text-center">1/11</td>
+                  <td class="text-left">Final Project Presentation	 </td>
+                  <td class="text-center"></td>
+                  <td class="text-center">Final Report due</td>
+                </tr>
+              </tbody>
+          </table>
+      
+
+
+      <p>* 參考用.</p>
+
+      <hr>
+
+
+      <h2>Grading Policy</h2>
+      
+        <ul>
+          <li>
+            Homework 0 - 5%
+          </li>
+          <li>
+            Homework 1/2/3/4 - 12.5%
+          </li>
+          <li>
+            Midterm - 15%
+          </li>
+          <li>
+            Final Project- 30%
+          </li>
+        </ul>
+
+        <hr>
+
+      <h2>Instructors</h2>
+        <div class="row">
+          <div class="col-sm-4">
+              <img src="img/prof_wu.jpg" alt="..." class="img-thumbnail">
+              <p></p>
+              <h6 class="text-center">Pei-Yuan Wu (主授)</h6>
+              <center><p><i class="fas fa-briefcase"></i> Office: 電機二館234</p></center>
+              <center><p><i class="fas fa-envelope"></i> Email: peiyuanwu@ntu.edu.tw</p></center>
+          </div>
+          <div class="col-sm-4">
+              <img src="img/prof_lee.jpg" alt="..." class="img-thumbnail">
+              <p></p>
+              <h6 class="text-center">Hung-Yi Lee</h6>
+              <center><p><i class="fas fa-briefcase"></i> Office: 電機二館508</p></center>
+              <center><p><i class="fas fa-envelope"></i> Email: hungyilee@ntu.edu.tw</p></center>
+          </div>
+          <div class="col-sm-4">
+              <img src="img/prof_lin.jpg" alt="..." class="img-thumbnail">
+              <p></p>
+              <h6 class="text-center">Tsung-Nan Lin</h6>
+              <center><p><i class="fas fa-briefcase"></i> Office: 博理館626</p></center>
+              <center><p><i class="fas fa-envelope"></i> Email: tsungnan@ntu.edu.tw</p></center>
+          </div>
+        </div>
+
+        <hr>
+
+      <h2>Teaching Assistants</h2>
+           <div class="row">
+              <div class="col-sm-2">
+                  <img src="img/ta1.jpg" alt="..." class="img-thumbnail">
+                  <p class="text-center">TA: 曾彥青</p>
+                  <p class="text-center">負責作業: HW1</p>
+               </div>
+              <div class="col-sm-2">
+                 <img src="img/ta2.jpg" alt="..." class="img-thumbnail">
+                 <p class="text-center">TA: 楊正彥</p>
+                 <p class="text-center">負責作業: HW2</p>
+              </div>
+           <div class="col-sm-2">
+              <img src="img/ta3.jpg" alt="..." class="img-thumbnail">
+              <p class="text-center">TA: 康家瑋</p>
+              <p class="text-center">負責作業: HW3</p>
+           </div>
+           <div class="col-sm-2">
+              <img src="img/ta4.jpg" alt="..." class="img-thumbnail">
+              <p class="text-center">TA: 曾耕森</p>
+              <p class="text-center">負責作業: HW4</p>
+           </div>
+           <div class="col-sm-2">
+              <img src="img/ta5.jpg" alt="..." class="img-thumbnail">
+              <p class="text-center">TA: 郭恆成</p>
+              <p class="text-center">負責作業: Final</p>
+           </div>
+           <div class="col-sm-2">
+              <img src="img/ta6.jpg" alt="..." class="img-thumbnail">
+              <p class="text-center">TA: 王克安</p>
+              <p class="text-center">負責作業: Final</p>
+           </div>
+         </div>
+  </div>
+
+  <hr>
+
+<!-- <div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div> -->
+
+</body>
+
+
+<footer>
+  <center><p><i class="fab fa-github"></i></a>Posted by: <a href="https://github.com/yangchris11/" target="_blank">Cheng-Yen Yang</a>.</p></center>
+  <center><p><i class="fas fa-envelope"></i> Contact info: <a href="mailto:"> ntumlta2018@gmail.com </a>.</p></center>
+  <center><p><i class="fab fa-facebook"></i> Facebook group: <a href="#"> Machine Learning (2018, Fall) </a>.</p></center>
+  <center><p><i class="fas fa-closed-captioning"></i> Based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font-Awesome</a>. Web fonts from <a href="https://fonts.google.com" target="_blank">Google</a>.</p></center>
+</footer>
+
+</html>
+

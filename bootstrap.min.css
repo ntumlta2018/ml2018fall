@@ -397,7 +397,9 @@ h6 {
 
 .h1,
 h1 {
-    font-size: 5rem
+    font-size: 3rem;
+    font-family: 'Quicksand', san-serif;
+    color: #0c2f53
 }
 
 .h2,
@@ -409,7 +411,9 @@ h2 {
 
 .h3,
 h3 {
-    font-size: 1.75rem
+    font-size: 1.75rem;
+    font-family: 'Quicksand', san-serif;
+    color: #0c2f53
 }
 
 .h4,

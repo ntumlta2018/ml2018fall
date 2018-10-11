@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Machine Learning (Fall, 2018)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <img src="img/logo.png" width="40%">
+  <h1 class="text-light">Machine Learning</h1>
+  <h1 class="text-light">(Fall, 2018)</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- <a class="navbar-brand" href="#">Home</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Homework1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Homework3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Homework4</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">Final Project</a>
+      </li>                  
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:40px">
+  <div class="row">
+    <div class="col-sm-12">
+     <div>
+    
+      <h1>HW2 - Credit Card Default Payment Prediction</h1>
+
+      <h2>Announcements</h2>
+
+      <ul>
+        <li> 10/12
+        <ul>
+          <li> Homework 2 release!
+        </ul>
+      </ul>
+      
+      <h2>Deadlines</h2>
+
+      <ul></ul>
+        <li> Early Public Simple Baseline Deadline: 10/25/2018 23:59:59 (GMT+8)  
+        <li> Kaggle Deadline: 11/1/2018 23:59:59 (GMT+8)
+        <li> Github Deadline: 11/2/2018 23:59:59(GMT+8)  
+      </ul>
+
+      <h2>Links</h2>
+
+      <ul>
+        <li> 作業投影片 Assignment Slides <a href="" target="_blank"><i class="fas fa-book"></i></a>
+        <li> 咖購聯結 Kaggle Link <a href="" target="_blank"><i class="fas fa-trophy"></i></a>
+        <li> 報告模板 Report Template <a href="" target="_blank"><i class="fas fa-file-alt"></i></a>
+        <li> 手寫題目 Writing Questions (未開放) <a href="" target="_blank"><i class="fas fa-pencil-alt"></i></a> </li>
+        <li> 小老師表單 Student TA Sheet (未開放) <a href="" target="_blank"><i class="fas fa-file-alt"></i></a>
+        <li> 遲交表單(未開放)
+      </ul>
+
+      <h2>TA's Grading Environment</h2>
+
+      <ul>
+        <li> Python: 3.6+ </li>
+        <li> numpy: 1.14+ </li>
+        <li> scipy: 1.1.0 </li>
+        <li> pandas: 0.23.4 </li>
+        <li> You are allowed to import any <b>Python Stanard Library</b> in your assignment.</li>
+      </ul>
+
+      <h2>Assignments Policy</h2>
+
+
+      <ul>
+        <li>Lateness Policy</li>
+        <ul>
+          <li> 每次作業不得遲交超過一天，遲交者該次作業總得分將x0.7，若有其他特殊原因者請儘速聯絡助教。 </li>
+          <li> 由於作業繳交皆透過Github上傳，因此恕不接受程式或者報告單獨遲交。 </li>
+          <li> 確定遲交者請先上傳遲交檔案至自己的Github Repository後再填寫遲交表單，助教群會重新手動clone該次作業檔案。 </li>
+        </ul>
+        <li>Script Modification Policy</li>
+        <ul>
+          <li> 當script格式錯誤，造成助教無法順利執行，請在公告時間內寄信向助教說明，修好之後重新執行所得kaggle部分分數將x0.7。</li>
+          <li> 不接受任何sh檔以外的任何形式錯誤更改，因此建議同學們在死線前預留充足的時間將自己Github上的東西clone下來測試一次。</li>
+          <li> 往年常出現的批改error:
+            <ul>
+              <li>套件版本(API)錯誤</li>
+              <li>檔案路徑錯誤</li>
+              <li>檔案命名錯誤</li>
+              <li>Windows神秘錯誤</li>
+            </ul>
+          </li>
+        </ul>
+        <li>Collaborator Policy</li>
+        <ul>
+          <li> Study groups are allowed but we expect students to understand and complete their own assignments and to hand in one assignment per student.</li>
+          <li> Every report problem must clearly stated whom you had discussed with (including name, student id or reference).</li>
+          <li> If professor and TAs detected any case of potentially plagiarism, we will need you to come over to explain your code </li>
+        </ul>
+      </ul>
+
+      
+  </div>
+
+  <hr>
+
+<!-- <div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div> -->
+
+</body>
+
+
+<footer>
+  <center><p><i class="fab fa-github"></i></a>Posted by: <a href="https://github.com/yangchris11/" target="_blank">Cheng-Yen Yang</a>.</p></center>
+  <center><p><i class="fas fa-envelope"></i> Contact info: <a href="mailto:"> ntumlta2018@gmail.com </a>.</p></center>
+  <center><p><i class="fab fa-facebook"></i> Facebook group: <a href="#"> Machine Learning (2018, Fall) </a>.</p></center>
+  <center><p><i class="fas fa-closed-captioning"></i> Based on <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font-Awesome</a>. Web fonts from <a href="https://fonts.google.com" target="_blank">Google</a>.</p></center>
+</footer>
+
+</html>
+
